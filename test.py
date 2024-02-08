@@ -13,3 +13,6 @@ for barcode in barcodes:
     cv2.putText(image, text, (x, y - 10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 0, 0), 2)
 
     print("Information : \n Found Type : {} Barcode : {}".format(barcodeType, barcodeData))
+
+cv2.imshow("Image", image)
+cv2.waitKey(0)
